@@ -23,7 +23,7 @@ SECRET_KEY = 'e!n048o&x^z%zovm%w03)!8r+)n)+43d14*s@@d*11wnjk*^(z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','206.189.137.152','progo.co.in','www.progo.co.in','192.168.43.104','progoweb.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','https://piyushresume.herokuapp.com/']
 
 
 # Application definition
