@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'e!n048o&x^z%zovm%w03)!8r+)n)+43d14*s@@d*11wnjk*^(z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'piyushresume.herokuapp.com']
 
@@ -112,31 +112,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 
-#
-# if len(sys.argv)>1:
-#     if sys.argv[1] == 'runserver':
-#         STATICFILES_FINDERS = [
-#         "django.contrib.staticfiles.finders.FileSystemFinder",
-#         "django.contrib.staticfiles.finders.AppDirectoriesFinder",
-#         ]
-#         PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-#         BASE_DIR = os.path.dirname(PROJECT_DIR)
-#         STATICFILES_DIRS = [                # For static files not particular to any app.
-#         os.path.join(PROJECT_DIR, "static"),
-#         ]
-#         STATIC_ROOT = os.path.join(BASE_DIR, "static") '''
-
+print("base dir path", BASE_DIR)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
-
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 
 
-# django_heroku.settings(locals())
-
-
-
-#django_heroku.settings(config=locals(), staticfiles=False,logging=False)
